@@ -6,6 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
+import { spawn } from 'child_process'
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -19,7 +20,7 @@ function serve() {
   return {
     writeBundle() {
       if (server) return;
-      server = require('child_process').spawn(
+      server = spawn(
         'yarn',
         ['run', 'start', '--', '--dev'],
         {
