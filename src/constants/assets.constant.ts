@@ -1,3 +1,4 @@
 export const assets = {
-  abstract: "images/abstract.png",
+  developer: "animations/developer.json",
+  rocket: "animations/rocket.json",
 };
