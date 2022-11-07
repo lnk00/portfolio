@@ -4,6 +4,7 @@ import lottie from "lottie-web";
 interface LottieComponentProps {
   class: string;
   data: string;
+  loop?: boolean;
 }
 
 export default component$((props: LottieComponentProps) => {
@@ -13,7 +14,7 @@ export default component$((props: LottieComponentProps) => {
     lottie.loadAnimation({
       container: anim.current!,
       renderer: "svg",
-      loop: true,
+      loop: props.loop,
       autoplay: true,
       path: props.data,
     });

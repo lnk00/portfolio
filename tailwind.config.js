@@ -7,11 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: "#05D7E7",
-        secondary: "#FD296D",
         dark: "#151525",
-        somber: "#025579",
-        clear: "#D1F8FF",
       },
     },
     fontFamily: {
@@ -19,5 +15,5 @@ module.exports = {
       display: ["Permanent Marker"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
