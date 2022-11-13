@@ -5,15 +5,11 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      colors: {
-        dark: "#151525",
-      },
-    },
+    extend: {},
     fontFamily: {
       sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       display: ["Permanent Marker"],
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [require("@tailwindcss/forms")],
 };

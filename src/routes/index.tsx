@@ -1,276 +1,163 @@
 import { component$ } from "@builder.io/qwik";
-import { assets } from "~/constants";
-import LottieComponent from "~/components/lottie.component";
-
-export const posts = [
-  {
-    title: "Boost your conversion rate",
-    href: "#",
-    category: { name: "Article", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "6 min",
-    author: {
-      name: "Roel Aufderehar",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    title: "How to use search engine optimization to drive sales",
-    href: "#",
-    category: { name: "Video", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-    date: "Mar 10, 2020",
-    datetime: "2020-03-10",
-    imageUrl:
-      "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "4 min",
-    author: {
-      name: "Brenna Goyette",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    title: "Improve your customer experience",
-    href: "#",
-    category: { name: "Case Study", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
-    date: "Feb 12, 2020",
-    datetime: "2020-02-12",
-    imageUrl:
-      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "11 min",
-    author: {
-      name: "Daniela Metz",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-];
-
-export const people = [
-  {
-    name: "Oney+",
-    role: "Front-end Developer",
-    imageUrl: "images/oney-logo.png",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "RATP SMart System",
-    role: "Front-end Developer",
-    imageUrl: "images/ratp-logo.png",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-  {
-    name: "Advanced Schema",
-    role: "Front-end Developer",
-    imageUrl: "images/advanced-logo.png",
-    twitterUrl: "#",
-    linkedinUrl: "#",
-  },
-];
 
 export default component$(() => {
   return (
-    <div class="mx-8">
-      <div className="container mx-auto pt-44 pb-32 flex">
-        <div className="max-w-6xl flex justify-between items-center">
-          <div className="">
-            <div className="flex flex-col">
-              <span className="font-display text-3xl md:text-5xl font-black text-gradient mb-2">
-                Nerdy !
-              </span>
-              <span className="text-6xl md:text-9xl lg:text-[172px] lg:leading-[172px] font-black md:-ml-2 mb-2">
-                Damien.
-              </span>
-            </div>
-
-            <div className="text-2xl md:text-6xl font-black mb-4 mt-2 md:mt-0">
-              <p className="pb-4 text-gradient">Software engineer</p>
-            </div>
-
-            <div className="inline-block pl-2 text-sm md:text-xl font-bold rounded-md shadow-md cursor-pointer gradient transition-all hover:pl-4 hover:shadow-sm">
-              <div className="rounded-md bg-white border flex items-center">
-                <span className="pl-4 pr-1 py-2 md:pl-8 md:pr-2 md:py-4">
-                  Read my blog articles
-                </span>
-                <LottieComponent
-                  class="w-14 h-14 mr-3"
-                  data={assets.rocket}
-                ></LottieComponent>
-              </div>
-            </div>
+    <div className="bg-zinc-50 sm:px-28">
+      <div className="mx-auto max-w-7xl sm:px-10 lg:px-20 bg-white ring-1 ring-zinc-100 pb-16">
+        <div className="flex align-center justify-between w-full pt-6">
+          <div className="h-10"></div>
+          <div className="flex ring-1 ring-zinc-100 rounded-full px-6 py-3 shadow-md text-sm text-zinc-800 font-medium">
+            <p className="mr-6 cursor-pointer hover:text-teal-400 text-teal-400">
+              Me
+            </p>
+            <p className="mr-6 cursor-pointer hover:text-teal-400 ">About</p>
+            <p className="mr-6 cursor-pointer hover:text-teal-400">Articles</p>
+            <p className="mr-6 cursor-pointer hover:text-teal-400">Projects</p>
+            <p className="cursor-pointer hover:text-teal-400">Uses</p>
           </div>
+          <img
+            src="/images/github.png"
+            alt="github logo"
+            className="h-10 cursor-pointer drop-shadow-md"
+          />
         </div>
-      </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 rounded-lg gradient mb-32 shadow-2xl">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Passionate developer with tons of hobbies.
-          </h2>
-        </div>
-        <dl className="mt-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-8">
-          <div className="flex flex-col">
-            <dt className="order-2 mt-2 text-lg font-medium leading-6 text-white opacity-50">
-              Of experience
-            </dt>
-            <dd className="order-1 text-5xl font-bold tracking-tight text-white">
-              5+ years
-            </dd>
+        <div className="py-24 px-4">
+          <div className="inline-block h-20 w-20 rounded-full ring-2 ring-zinc-100 overflow-hidden shadow-lg">
+            <img
+              className="h-full mt-1"
+              src="/images/perso.jpeg"
+              alt="perso logo"
+            />
           </div>
-          <div className="mt-10 flex flex-col sm:mt-0">
-            <dt className="order-2 mt-2 text-lg font-medium leading-6 text-white opacity-50">
-              Specialist
-            </dt>
-            <dd className="order-1 text-5xl font-bold tracking-tight text-white">
-              Frontend
-            </dd>
-          </div>
-          <div className="mt-10 flex flex-col sm:mt-0">
-            <dt className="order-2 mt-2 text-lg font-medium leading-6 text-white opacity-50">
-              Lover
-            </dt>
-            <dd className="order-1 text-5xl font-bold tracking-tight text-white">
-              Remote
-            </dd>
-          </div>
-        </dl>
-      </div>
-
-      <div class="mb-32">
-        <div className="container mx-auto">
-          <div className="space-y-6">
-            <h2 className="text-2xl md:text-6xl font-bold">I Worked with</h2>
-            <ul
-              role="list"
-              className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
-            >
-              {people.map((person) => (
-                <li key={person.name}>
-                  <div className="space-y-4 bg-white shadow-md rounded-lg p-4">
-                    <div className="aspect-w-3 aspect-h-2 relative">
-                      <img
-                        className="rounded-lg object-cover shadow-lg absolute"
-                        src={assets.abstract}
-                        alt=""
-                      />
-                      <div className="mx-auto w-[96%] h-[95%] top-[50%] -translate-y-[50%] flex items-center justify-center">
-                        <div class="rounded-lg bg-dark opacity-50 h-full w-full absolute -z-10"></div>
-                        <img
-                          src={person.imageUrl}
-                          alt="logo oney"
-                          class="max-h-[50%] max-w-[50%] brightness-0 invert"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="space-y-2">
-                      <div className="space-y-1 text-lg font-medium leading-6">
-                        <h3>{person.name}</h3>
-                        <p className="text-gradient">{person.role}</p>
-                        <div class="h-1"></div>
-                        <p className="text-sm font-medium px-3 py-1 text-gray-400 bg-gray-100 inline rounded-md">
-                          Freelance
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto mb-32">
-        <div className="space-y-8">
-          <h2 className="text-2xl md:text-6xl font-bold">From the blog</h2>
-          <div className="mx-auto mt-12 grid max-w-lg gap-8 lg:max-w-none lg:grid-cols-3">
-            {posts.map((post) => (
-              <div
-                key={post.title}
-                className="flex flex-col overflow-hidden rounded-lg shadow-lg"
-              >
-                <div className="flex-shrink-0">
-                  <img
-                    className="h-48 w-full object-cover"
-                    src={post.imageUrl}
-                    alt=""
-                  />
-                </div>
-                <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-indigo-600">
-                      <a href={post.category.href} className="hover:underline">
-                        {post.category.name}
-                      </a>
-                    </p>
-                    <a href={post.href} className="mt-2 block">
-                      <p className="text-xl font-semibold text-gray-900">
-                        {post.title}
-                      </p>
-                      <p className="mt-3 text-base text-gray-500">
-                        {post.description}
-                      </p>
-                    </a>
-                  </div>
-                  <div className="mt-6 flex items-center">
-                    <div className="flex-shrink-0">
-                      <a href={post.author.href}>
-                        <span className="sr-only">{post.author.name}</span>
-                        <img
-                          className="h-10 w-10 rounded-full"
-                          src={post.author.imageUrl}
-                          alt=""
-                        />
-                      </a>
-                    </div>
-                    <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">
-                        <a href={post.author.href} className="hover:underline">
-                          {post.author.name}
-                        </a>
-                      </p>
-                      <div className="flex space-x-1 text-sm text-gray-500">
-                        <time dateTime={post.datetime}>{post.date}</time>
-                        <span aria-hidden="true">&middot;</span>
-                        <span>{post.readingTime} read</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <footer className="">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 rounded-lg gradient mb-8 shadow-2xl">
-          <div className="flex justify-center space-x-6 md:order-2">
-            {/*Social media*/}
-          </div>
-          <div className="mt-8 md:order-1 md:mt-0">
-            <p className="text-center text-base text-white">
-              &copy; 2022 Damien Dumontet, Inc. All rights reserved.
+          <div className="max-w-2xl mt-6">
+            <p className="text-6xl font-bold text-zinc-800 leading-tight">
+              Software engineer, doer, and creative developer.
             </p>
           </div>
         </div>
-      </footer>
+
+        <div className="px-4">
+          <div className="">
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl">
+                Recent publications
+              </h2>
+              <p className="mt-3 text-xl text-zinc-500 sm:mt-4">
+                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
+                volutpat massa dictumst amet. Sapien tortor lacus arcu.
+              </p>
+            </div>
+            <div className="h-0.5 w-full bg-zinc-100 mt-14 mb-16"></div>
+            <div>
+              <div className="flex h-44 mb-16">
+                <img
+                  src="/images/abstract.jpg"
+                  alt="abstract"
+                  className="h-44 w-44 shrink-0 rounded-xl shadow-lg"
+                />
+                <div className="ml-8 flex flex-col h-full">
+                  <div className="flex items-center mb-2">
+                    <div className="h-4 w-0.5 bg-zinc-200 mr-2"></div>
+                    <p className="text-sm text-zinc-400">September 5, 2022</p>
+                  </div>
+
+                  <p className="text-xl text-zinc-800 font-semibold mb-2">
+                    How and why i build my own blog
+                  </p>
+
+                  <div className="text-ellipsis overflow-hidden relative">
+                    <p className="text-zinc-400 text-md">
+                      Illo sint voluptas. Error voluptates culpa eligendi. Hic
+                      vel totam vitae illo. Non aliquid explicabo necessitatibus
+                      unde. Sed exercitationem placeat consectetur nulla
+                      deserunt vel. Iusto corrupti dicta. Illo sint voluptas.
+                      Error voluptates culpa eligendi. Hic vel totam vitae illo.
+                      Non aliquid explicabo necessitatibus unde. Sed
+                      exercitationem placeat consectetur nulla deserunt vel.
+                      Iusto corrupti dicta. Hic vel totam vitae illo. Non
+                      aliquid explicabo necessitatibus unde. Sed exercitationem
+                      placeat consectetur nulla deserunt vel. Iusto corrupti
+                      dicta.
+                    </p>
+                    <div className="bg-gradient-to-t from-white to-transparent h-24 w-full absolute left-0 bottom-0"></div>
+                  </div>
+
+                  <p className="text-teal-400 hover:text-teal-300 cursor-pointer mt-auto">
+                    Read article
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p className="text-teal-400 hover:text-teal-300 text-lg cursor-pointer">
+              See all the articles
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16">
+          <div className="rounded-lg ring-1 ring-zinc-100 px-6 py-6 md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
+            <div className="xl:w-0 xl:flex-1">
+              <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl">
+                Stay up to date
+              </h2>
+              <p className="mt-3 max-w-3xl text-lg leading-6 text-zinc-300">
+                Get notified when I publish something new, and unsubscribe at
+                any time.
+              </p>
+            </div>
+            <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
+              <form className="sm:flex">
+                <label htmlFor="email-address" className="sr-only">
+                  Email address
+                </label>
+                <input
+                  id="email-address"
+                  name="email-address"
+                  type="email"
+                  autoComplete="email"
+                  required
+                  className="w-full border-0 rounded-md ring-2 ring-zinc-100 px-5 py-3 placeholder-zinc-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-teal-400"
+                  placeholder="Enter your email"
+                />
+                <button
+                  type="submit"
+                  className="mt-3 flex w-full items-center justify-center rounded-md border border-transparent bg-teal-400 px-5 py-3 text-base font-medium text-white shadow hover:bg-teal-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-teal-700 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0"
+                >
+                  Notify me
+                </button>
+              </form>
+              <p className="mt-3 text-sm text-zinc-300">
+                We care about the protection of your data. Read our{" "}
+                <a
+                  href="#"
+                  className="font-medium text-teal-400 hover:text-teal-300 underline"
+                >
+                  Privacy Policy.
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="h-0.5 w-full bg-zinc-100 my-16"></div>
+        <div className="flex">
+          <div className="flex text-zinc-800">
+            <p className="mr-6 cursor-pointer hover:text-teal-400">Me</p>
+            <p className="mr-6 cursor-pointer hover:text-teal-400 ">About</p>
+            <p className="mr-6 cursor-pointer hover:text-teal-400">Articles</p>
+            <p className="mr-6 cursor-pointer hover:text-teal-400">Projects</p>
+            <p className="cursor-pointer hover:text-teal-400">Uses</p>
+          </div>
+          <p className="ml-auto text-sm text-zinc-300">
+            © 2022 Spencer Sharp. All rights reserved.
+          </p>
+        </div>
+      </div>
     </div>
   );
 });
+
+/*
+text-overflow: ellipsis;
+overflow: hidden;
+word-wrap: break-word;*/
