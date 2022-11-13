@@ -59,7 +59,7 @@ export default component$(() => {
                 <div className="ml-8 flex flex-col h-full">
                   <div className="flex items-center mb-2">
                     <div className="h-4 w-0.5 bg-zinc-200 mr-2"></div>
-                    <p className="text-sm text-zinc-400">September 5, 2022</p>
+                    <p className="text-sm text-zinc-400">November 12, 2022</p>
                   </div>
 
                   <p className="text-xl text-zinc-800 font-semibold mb-2">
@@ -153,8 +153,3 @@ export default component$(() => {
     </div>
   );
 });
-
-/*
-text-overflow: ellipsis;
-overflow: hidden;
-word-wrap: break-word;*/
