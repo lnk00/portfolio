@@ -6,7 +6,7 @@ export default component$(() => {
       <div className="h-10"></div>
       <div className="flex ring-1 ring-zinc-100 rounded-full px-6 py-3 shadow-md text-sm text-zinc-800 font-medium">
         <p className="mr-6 cursor-pointer hover:text-teal-400 text-teal-400">
-          Me
+          Hey!
         </p>
         <p className="mr-6 cursor-pointer hover:text-teal-400 ">About</p>
         <p className="mr-6 cursor-pointer hover:text-teal-400">Articles</p>

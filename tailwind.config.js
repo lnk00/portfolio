@@ -11,5 +11,5 @@ module.exports = {
       display: ["Permanent Marker"],
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };

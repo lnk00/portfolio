@@ -31,9 +31,15 @@ export default component$((props: ArticlePreviewProps) => {
           <div className="bg-gradient-to-t from-white to-transparent h-24 w-full absolute left-0 bottom-0"></div>
         </div>
 
-        <p className="text-teal-400 hover:text-teal-300 cursor-pointer mt-auto">
+        <a
+          className="text-teal-400 hover:text-teal-300 cursor-pointer mt-auto"
+          href={`/article/${props.article.title
+            .toLowerCase()
+            .replaceAll(" ", "-")
+            .replaceAll("'", "")}`}
+        >
           Read article
-        </p>
+        </a>
       </div>
     </div>
   );
