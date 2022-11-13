@@ -17,7 +17,7 @@ export default component$(() => {
           Hey!
         </a>
         <a
-          href="/"
+          href="/about"
           className={`mr-6 cursor-pointer hover:text-teal-400 ${
             location.pathname.includes("/about") ? "text-teal-400" : ""
           }`}
@@ -33,7 +33,7 @@ export default component$(() => {
           Articles
         </a>
         <a
-          href="/"
+          href="/projects"
           className={`mr-6 cursor-pointer hover:text-teal-400 ${
             location.pathname.includes("/projects") ? "text-teal-400" : ""
           }`}
@@ -41,7 +41,7 @@ export default component$(() => {
           Projects
         </a>
         <a
-          href="/"
+          href="/uses"
           className={`cursor-pointer hover:text-teal-400 ${
             location.pathname.includes("/uses") ? "text-teal-400" : ""
           }`}
