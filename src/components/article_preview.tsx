@@ -10,7 +10,7 @@ export default component$((props: ArticlePreviewProps) => {
   return (
     <div className="flex h-44 mb-16">
       <img
-        src={props.article.img}
+        src={`${process.env.SUPABASE_IMAGES!}/${props.article.img}`}
         alt="abstract"
         className="h-44 w-44 shrink-0 rounded-xl shadow-lg"
       />
@@ -32,13 +32,25 @@ export default component$((props: ArticlePreviewProps) => {
         </div>
 
         <a
-          className="text-teal-400 hover:text-teal-300 cursor-pointer mt-auto"
+          className="flex items-center text-teal-400 hover:text-teal-300 cursor-pointer mt-auto"
           href={`/article/${props.article.title
             .toLowerCase()
             .replaceAll(" ", "-")
             .replaceAll("'", "")}`}
         >
-          Read article
+          <p className="mr-2">Read article</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+              clipRule="evenodd"
+            />
+          </svg>
         </a>
       </div>
     </div>
