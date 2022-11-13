@@ -11,7 +11,7 @@ export const onGet: RequestHandler<Article[]> = async () => {
 };
 
 export default component$(() => {
-  const articles = useEndpoint<Article[]>();
+  const articles = useEndpoint<typeof onGet>();
 
   return (
     <div className="bg-zinc-50 sm:px-28">

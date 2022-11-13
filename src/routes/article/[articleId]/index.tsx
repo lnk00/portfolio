@@ -14,7 +14,7 @@ export const onGet: RequestHandler<string> = async ({ params }) => {
 };
 
 export default component$(() => {
-  const article = useEndpoint<string>();
+  const article = useEndpoint<typeof onGet>();
 
   return (
     <div className="bg-zinc-50 sm:px-28">
