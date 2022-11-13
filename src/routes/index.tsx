@@ -1,16 +1,19 @@
-import { component$, useResource$, Resource } from "@builder.io/qwik";
+import { component$, Resource } from "@builder.io/qwik";
 import ArticlePreview from "~/components/article_preview";
 import Nav from "~/components/nav";
 import Foot from "~/components/foot";
 import Newsletter from "~/components/newsletter";
 import { supabase } from "~/constants/supabase";
 import { Article } from "~/models/article";
+import { RequestHandler, useEndpoint } from "@builder.io/qwik-city";
+
+export const onGet: RequestHandler<Article[]> = async () => {
+  const articles = await supabase.from("articles").select();
+  return articles.data;
+};
 
 export default component$(() => {
-  const articles = useResource$<Article[] | null>(async () => {
-    const articles = await supabase.from("articles").select();
-    return articles.data;
-  });
+  const articles = useEndpoint<Article[]>();
 
   return (
     <div className="bg-zinc-50 sm:px-28">

@@ -1,19 +1,20 @@
-import { component$, Resource, useResource$ } from "@builder.io/qwik";
+import { component$, Resource } from "@builder.io/qwik";
 import { Converter } from "showdown";
 import Nav from "~/components/nav";
-import { useLocation } from "@builder.io/qwik-city";
+import { RequestHandler, useEndpoint } from "@builder.io/qwik-city";
+
+export const onGet: RequestHandler<string> = async ({ params }) => {
+  const converter = new Converter();
+  const res = await fetch(
+    `${process.env.SUPABASE_ARTICLES!}/${params.articleId}.md`
+  );
+  const file = await res.blob();
+  const md = await file.text();
+  return converter.makeHtml(md);
+};
 
 export default component$(() => {
-  const location = useLocation();
-  const article = useResource$<string>(async () => {
-    const converter = new Converter();
-    const res = await fetch(
-      `${process.env.SUPABASE_ARTICLES!}/${location.params.articleId}.md`
-    );
-    const file = await res.blob();
-    const md = await file.text();
-    return converter.makeHtml(md);
-  });
+  const article = useEndpoint<string>();
 
   return (
     <div className="bg-zinc-50 sm:px-28">
