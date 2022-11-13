@@ -12,7 +12,7 @@ export default component$((props: ArticlePreviewProps) => {
       <img
         src={`${process.env.SUPABASE_IMAGES!}/${props.article.img}`}
         alt="abstract"
-        className="h-44 w-44 shrink-0 rounded-xl shadow-lg"
+        className="h-44 w-44 shrink-0 rounded-lg shadow-lg"
       />
       <div className="ml-8 flex flex-col h-full">
         <div className="flex items-center mb-2">

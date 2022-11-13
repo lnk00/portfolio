@@ -5,7 +5,26 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.zinc.500"),
+
+            h1: {
+              color: theme("colors.zinc.800"),
+            },
+
+            img: {
+              width: theme("width.full"),
+              "border-radius": theme("borderRadius.lg"),
+              "box-shadow": theme("boxShadow.lg"),
+              "object-fit": "cover",
+            },
+          },
+        },
+      }),
+    },
     fontFamily: {
       sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       display: ["Permanent Marker"],
