@@ -4,8 +4,6 @@ import { useLocation } from "@builder.io/qwik-city";
 export default component$(() => {
   const location = useLocation();
 
-  console.log(location);
-
   return (
     <div className="flex align-center justify-between w-full pt-6">
       <div className="h-10"></div>
