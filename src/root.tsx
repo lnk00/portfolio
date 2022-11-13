@@ -1,3 +1,4 @@
+import * as dotenv from "dotenv";
 import { component$, useStyles$ } from "@builder.io/qwik";
 import {
   QwikCity,
@@ -7,12 +8,7 @@ import {
 import globalStyles from "./global.scss?inline";
 
 export default component$(() => {
-  /**
-   * The root of a QwikCity site always start with the <QwikCity> component,
-   * immediately followed by the document's <head> and <body>.
-   *
-   * Dont remove the `<head>` and `<body>` elements.
-   */
+  dotenv.config();
   useStyles$(globalStyles);
 
   return (

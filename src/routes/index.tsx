@@ -1,10 +1,17 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useResource$, Resource } from "@builder.io/qwik";
 import ArticlePreview from "~/components/article_preview";
 import Nav from "~/components/nav";
 import Foot from "~/components/foot";
 import Newsletter from "~/components/newsletter";
+import { supabase } from "~/constants/supabase";
+import { Article } from "~/models/article";
 
 export default component$(() => {
+  const articles = useResource$<Article[] | null>(async () => {
+    const articles = await supabase.from("articles").select();
+    return articles.data;
+  });
+
   return (
     <div className="bg-zinc-50 sm:px-28">
       <div className="mx-auto max-w-7xl sm:px-10 lg:px-20 bg-white ring-1 ring-zinc-100 pb-16">
@@ -30,13 +37,27 @@ export default component$(() => {
                 Recent publications
               </h2>
               <p className="mt-3 text-xl text-zinc-500 sm:mt-4">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                These are my last publications about my works, my learnings, and
+                hobbies. don't hesitate to reach me if you want more
+                explanations about a subject I talked about.
               </p>
             </div>
             <div className="h-0.5 w-full bg-zinc-100 mt-14 mb-16"></div>
             <div>
-              <ArticlePreview></ArticlePreview>
+              <Resource
+                value={articles}
+                onPending={() => <div>Loading...</div>}
+                onRejected={() => <div>Failed to person data</div>}
+                onResolved={(articles) => {
+                  return (
+                    <div>
+                      {articles?.map((article) => (
+                        <ArticlePreview article={article}></ArticlePreview>
+                      ))}
+                    </div>
+                  );
+                }}
+              ></Resource>
             </div>
             <p className="text-teal-400 hover:text-teal-300 text-lg cursor-pointer">
               See all the articles
