@@ -108,9 +108,6 @@ export default component$(() => {
             </div>
             <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
               <form className="sm:flex">
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
-                </label>
                 <input
                   id="email-address"
                   name="email-address"
