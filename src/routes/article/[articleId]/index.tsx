@@ -21,8 +21,8 @@ export default component$(() => {
         <div>
           <Nav></Nav>
           <a
-            className="flex items-center pt-12 cursor-pointer text-teal-400 hover:text-teal-300"
-            href="/"
+            className="flex items-center pt-12 cursor-pointer text-teal-400 hover:text-teal-300 px-4"
+            href="/articles"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export default component$(() => {
             onResolved={(article) => {
               return (
                 <div
-                  class="prose m-auto py-12"
+                  class="prose m-auto py-12 px-4"
                   dangerouslySetInnerHTML={article}
                 ></div>
               );

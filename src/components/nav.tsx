@@ -27,7 +27,7 @@ export default component$(() => {
           About
         </a>
         <a
-          href="/"
+          href="/articles"
           className={`mr-6 cursor-pointer hover:text-teal-400 ${
             location.pathname.includes("/article") ? "text-teal-400" : ""
           }`}
@@ -51,11 +51,13 @@ export default component$(() => {
           Uses
         </a>
       </div>
-      <img
-        src="/images/github.png"
-        alt="github logo"
-        className="h-10 cursor-pointer drop-shadow-md"
-      />
+      <a href="https://github.com/lnk00">
+        <img
+          src="/images/github.png"
+          alt="github logo"
+          className="h-10 cursor-pointer drop-shadow-md"
+        />
+      </a>
     </div>
   );
 });

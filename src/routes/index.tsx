@@ -59,9 +59,12 @@ export default component$(() => {
                 }}
               ></Resource>
             </div>
-            <p className="text-teal-400 hover:text-teal-300 text-lg cursor-pointer">
+            <a
+              href="/articles"
+              className="text-teal-400 hover:text-teal-300 text-lg cursor-pointer"
+            >
               See all the articles
-            </p>
+            </a>
           </div>
         </div>
         <Newsletter></Newsletter>
