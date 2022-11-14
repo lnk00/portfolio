@@ -2,10 +2,12 @@ import { component$, Resource, useClientEffect$ } from "@builder.io/qwik";
 import { Converter } from "showdown";
 import Nav from "~/components/nav";
 import { RequestHandler, useEndpoint } from "@builder.io/qwik-city";
-import hljs from "highlight.js";
+import showdownHighlight from "showdown-highlight";
 
 export const onGet: RequestHandler<string> = async ({ params }) => {
-  const converter = new Converter();
+  const converter = new Converter({
+    extensions: [showdownHighlight({ pre: true })],
+  });
   const res = await fetch(
     `${process.env.SUPABASE_ARTICLES!}/${params.articleId}.md`
   );
@@ -16,12 +18,6 @@ export const onGet: RequestHandler<string> = async ({ params }) => {
 
 export default component$(() => {
   const article = useEndpoint<typeof onGet>();
-
-  useClientEffect$(() => {
-    document.querySelectorAll("pre code").forEach((el) => {
-      hljs.highlightElement(el as HTMLElement);
-    });
-  });
 
   return (
     <div className="bg-zinc-50 sm:px-28">
