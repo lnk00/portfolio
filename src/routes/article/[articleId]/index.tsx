@@ -1,4 +1,4 @@
-import { component$, Resource, useClientEffect$ } from "@builder.io/qwik";
+import { component$, Resource } from "@builder.io/qwik";
 import { Converter } from "showdown";
 import Nav from "~/components/nav";
 import { RequestHandler, useEndpoint } from "@builder.io/qwik-city";

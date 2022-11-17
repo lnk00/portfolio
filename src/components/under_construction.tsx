@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import Nav from "~/components/nav";
 
 export default component$(() => {
   return (
