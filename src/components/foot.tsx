@@ -11,7 +11,7 @@ export default component$(() => {
         <p className="cursor-pointer hover:text-teal-400">Uses</p>
       </div>
       <p className="ml-auto text-sm text-zinc-300">
-        © 2022 Spencer Sharp. All rights reserved.
+        © 2022 Damien Dumontet. All rights reserved.
       </p>
     </div>
   );
