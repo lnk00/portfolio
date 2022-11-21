@@ -53,7 +53,7 @@ export default component$(() => {
             onResolved={(article) => {
               return (
                 <div
-                  class="prose m-auto py-12 px-4"
+                  class="prose prose-zinc prose-p:text-justify prose-img:rounded-lg prose-img:shadow-lg m-auto py-12 px-4"
                   dangerouslySetInnerHTML={article}
                 ></div>
               );
