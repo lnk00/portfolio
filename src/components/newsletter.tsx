@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
   return (
@@ -32,7 +32,7 @@ export default component$(() => {
             </button>
           </form>
           <p className="mt-3 text-sm text-zinc-300">
-            We care about the protection of your data. Read our{" "}
+            We care about the protection of your data. Read our{' '}
             <a
               href="#"
               className="font-medium text-teal-400 hover:text-teal-300 underline"

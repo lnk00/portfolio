@@ -1,6 +1,6 @@
-import { component$ } from "@builder.io/qwik";
-import Foot from "~/components/foot";
-import Nav from "~/components/nav";
+import { component$ } from '@builder.io/qwik';
+import Foot from '~/components/foot';
+import Nav from '~/components/nav';
 
 export default component$(() => {
   return (

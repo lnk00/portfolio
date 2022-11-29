@@ -1,6 +1,6 @@
-import { component$ } from "@builder.io/qwik";
-import Nav from "~/components/nav";
-import UnderConstruction from "~/components/under_construction";
+import { component$ } from '@builder.io/qwik';
+import Nav from '~/components/nav';
+import UnderConstruction from '~/components/under_construction';
 
 export default component$(() => {
   return (

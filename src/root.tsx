@@ -1,11 +1,11 @@
-import * as dotenv from "dotenv";
-import { component$, useStyles$ } from "@builder.io/qwik";
+import * as dotenv from 'dotenv';
+import { component$, useStyles$ } from '@builder.io/qwik';
 import {
   QwikCity,
   RouterOutlet,
   ServiceWorkerRegister,
-} from "@builder.io/qwik-city";
-import globalStyles from "./global.scss?inline";
+} from '@builder.io/qwik-city';
+import globalStyles from './global.scss?inline';
 
 export default component$(() => {
   dotenv.config();

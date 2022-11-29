@@ -1,5 +1,5 @@
-import { component$ } from "@builder.io/qwik";
-import { useLocation } from "@builder.io/qwik-city";
+import { component$ } from '@builder.io/qwik';
+import { useLocation } from '@builder.io/qwik-city';
 
 export default component$(() => {
   const location = useLocation();
@@ -11,7 +11,7 @@ export default component$(() => {
         <a
           href="/"
           className={`mr-6 cursor-pointer hover:text-teal-400 ${
-            location.pathname === "/" ? "text-teal-400" : ""
+            location.pathname === '/' ? 'text-teal-400' : ''
           }`}
         >
           Hey!
@@ -19,7 +19,7 @@ export default component$(() => {
         <a
           href="/about"
           className={`mr-6 cursor-pointer hover:text-teal-400 ${
-            location.pathname.includes("/about") ? "text-teal-400" : ""
+            location.pathname.includes('/about') ? 'text-teal-400' : ''
           }`}
         >
           About
@@ -27,7 +27,7 @@ export default component$(() => {
         <a
           href="/articles"
           className={`mr-6 cursor-pointer hover:text-teal-400 ${
-            location.pathname.includes("/article") ? "text-teal-400" : ""
+            location.pathname.includes('/article') ? 'text-teal-400' : ''
           }`}
         >
           Articles
@@ -35,7 +35,7 @@ export default component$(() => {
         <a
           href="/projects"
           className={`mr-6 cursor-pointer hover:text-teal-400 ${
-            location.pathname.includes("/projects") ? "text-teal-400" : ""
+            location.pathname.includes('/projects') ? 'text-teal-400' : ''
           }`}
         >
           Projects
@@ -43,7 +43,7 @@ export default component$(() => {
         <a
           href="/uses"
           className={`cursor-pointer hover:text-teal-400 ${
-            location.pathname.includes("/uses") ? "text-teal-400" : ""
+            location.pathname.includes('/uses') ? 'text-teal-400' : ''
           }`}
         >
           Uses

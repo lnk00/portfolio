@@ -1,6 +1,6 @@
-import { component$ } from "@builder.io/qwik";
-import { Article } from "~/models/article";
-import dayjs from "dayjs";
+import { component$ } from '@builder.io/qwik';
+import { Article } from '~/models/article';
+import dayjs from 'dayjs';
 
 interface ArticlePreviewProps {
   article: Article;
@@ -18,7 +18,7 @@ export default component$((props: ArticlePreviewProps) => {
         <div className="flex items-center mb-2">
           <div className="h-4 w-0.5 bg-zinc-200 mr-2"></div>
           <p className="text-sm text-zinc-400">
-            {dayjs(props.article.created_at).format("MMMM DD, YYYY")}
+            {dayjs(props.article.created_at).format('MMMM DD, YYYY')}
           </p>
         </div>
 
@@ -35,8 +35,8 @@ export default component$((props: ArticlePreviewProps) => {
           className="flex items-center text-teal-400 hover:text-teal-300 cursor-pointer mt-auto"
           href={`/article/${props.article.title
             .toLowerCase()
-            .replaceAll(" ", "-")
-            .replaceAll("'", "")}`}
+            .replaceAll(' ', '-')
+            .replaceAll("'", '')}`}
         >
           <p className="mr-2">Read article</p>
           <svg

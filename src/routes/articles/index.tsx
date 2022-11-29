@@ -1,12 +1,12 @@
-import { component$, Resource } from "@builder.io/qwik";
-import Nav from "~/components/nav";
-import ArticlePreview from "~/components/article_preview";
-import { Article } from "~/models/article";
-import { supabase } from "~/constants/supabase";
-import { RequestHandler, useEndpoint } from "@builder.io/qwik-city";
+import { component$, Resource } from '@builder.io/qwik';
+import Nav from '~/components/nav';
+import ArticlePreview from '~/components/article_preview';
+import { Article } from '~/models/article';
+import { supabase } from '~/constants/supabase';
+import { RequestHandler, useEndpoint } from '@builder.io/qwik-city';
 
 export const onGet: RequestHandler<Article[]> = async () => {
-  const articles = await supabase.from("articles").select();
+  const articles = await supabase.from('articles').select();
   return articles.data;
 };
 

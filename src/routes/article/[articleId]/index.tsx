@@ -1,8 +1,8 @@
-import { component$, Resource } from "@builder.io/qwik";
-import { Converter } from "showdown";
-import Nav from "~/components/nav";
-import { RequestHandler, useEndpoint } from "@builder.io/qwik-city";
-import showdownHighlight from "showdown-highlight";
+import { component$, Resource } from '@builder.io/qwik';
+import { Converter } from 'showdown';
+import Nav from '~/components/nav';
+import { RequestHandler, useEndpoint } from '@builder.io/qwik-city';
+import showdownHighlight from 'showdown-highlight';
 
 export const onGet: RequestHandler<string> = async ({ params }) => {
   const converter = new Converter({
