@@ -15,20 +15,22 @@ export default component$(() => {
               </p>
               <p className="text-justify text-zinc-500">
                 I am a passionate software engineer with 10 years of experience
-                in crafting software and website both profesionally and in my
-                free time. I have worked on several projects using modern
-                fontend frameworks like React and Angular but also love working
-                with lower level technologies like C++ and Rust.
-                <br /> <br /> I pay attention to good UI and UX, so the code I
-                write try to respect the eyes and the mind of the users. Adept
-                of TDD and DDD, the code I write is always clean and readable.
-                <br /> <br />I love traveling and being out of my comfort zone,
-                which is why I work remotely so that I can spend time exploring
-                new places while I work on amazing project.
-                <br /> <br />I have different hobbies going from 3D modelization
-                with software like blender to aviation simulation but i'll not
-                talk about these hobbies to much now, i'll let you discover them
-                reading my blog articles !
+                in developing software and websites, both professionally and in
+                my free time. I have worked on several projects using modern
+                frontend frameworks such as React and Angular, as well as
+                lower-level technologies like C++ and Rust.
+                <br /> <br />I prioritize good UI and UX, ensuring that the code
+                I write respects the users' eyes and minds. I am an adept of TDD
+                and DDD, meaning that the code I write is always clean and
+                readable.
+                <br /> <br />I enjoy traveling and stepping out of my comfort
+                zone, which is why I work remotely. This allows me to explore
+                new places while working on exciting projects.
+                <br /> <br />
+                In my free time, I have various hobbies, including 3D modeling
+                with software like Blender and aviation simulation. I invite you
+                to discover more about these hobbies by reading my blog
+                articles!
               </p>
             </div>
             <div className="w-full bg-zinc-800 rounded-lg shadow-xl mb-auto rotate-3 flex-shrink-[10]">

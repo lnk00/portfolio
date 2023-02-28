@@ -4,6 +4,7 @@ import ArticlePreview from '~/components/article_preview';
 import { Article } from '~/models/article';
 import { supabase } from '~/constants/supabase';
 import { RequestHandler, useEndpoint } from '@builder.io/qwik-city';
+import Foot from '~/components/foot';
 
 export const onGet: RequestHandler<Article[]> = async () => {
   const articles = await supabase.from('articles').select();
@@ -50,6 +51,8 @@ export default component$(() => {
             </div>
           </div>
         </div>
+        <div className="h-0.5 w-full bg-zinc-100 mb-16"></div>
+        <Foot></Foot>
       </div>
     </div>
   );

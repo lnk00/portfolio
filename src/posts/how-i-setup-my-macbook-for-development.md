@@ -1,35 +1,35 @@
 # How I setup my Macbook for development
 
-![](https://zqkcqobnogebhjukuqup.supabase.co/storage/v1/object/public/images/abstract-2-cover.jpg)
+![](https://zqkcqobnogebhjukuqup.supabase.co/storage/v1/object/public/images/how-i-setup-my-macbook-for-development.jpg)
 
-Since I started to learn software development i always wanted to find the best way to setup my workstation in the best way to be productive and enjoy crafting software. I tried a lot of different configurations, software, workflows without being fully happy with it. Good news, i found my dream setup / workflow to be productive and happy when I'm programming and in this article I'll explain How and Why I setup my Macbook in the way i did.
+Ever since I began learning software development, I've been on the quest for the ultimate workstation setup that would maximize my productivity and enable me to enjoy crafting software. I've experimented with various configurations, software, and workflows, but I never quite found the perfect fit. However, I'm excited to share that I've finally discovered my dream setup and workflow that allows me to be both productive and happy when programming. In this article, I'll explain how and why I configured my work environment in the way that I did.
 
-I'll not try to convince you that my way to work is the best, i truly think that everyone like to work differently and that everyone should spend at least a little amount of time finding what's suits you more. Maybe you'll find inspiration on my article, maybe not but at least i hope it will bring you the wish to explore all the possibilities we have in 2023 to setup our workstation the way we love it.
+I'm not here to convince you that my way of working is the best. I truly believe that everyone has their own preferred way of working and that it's important to spend some time exploring different options to find what suits you best. While you may or may not find inspiration in my article, my hope is that it will at least inspire you to explore the multitude of possibilities available to us in 2023 for setting up our workstations in a way that we truly love.
 
 ## Hardware
 
 ### Computer
 
-I Started my dev journey 10 years ago with a HP (Hewlett Packard), 3 years later I was switching for the apple ecosystem with the Iphone, the Apple Watch and finally the Macbook, since this time I never came back from the Apple ecosystem. The UNIX based Operating System (Mac OS) have everything I need to be productive and everything I like from the UX/UI perspective. Today I work mainly with a Mac Mini M1 since I work from home most of the time but I also own a Macbook Air M1 if I need to work from a public coffee with a friend or if I need to see a client.
+I began my development journey 10 years ago with a Hewlett Packard (HP) laptop, but after three years, I made the switch to the Apple ecosystem, starting with an iPhone, an Apple Watch, and eventually a MacBook. Since then, I've never looked back. The UNIX-based operating system (Mac OS) has everything I need to be productive, as well as a UX/UI that I enjoy. These days, I primarily work with a Mac Mini M1 since I'm mostly working from home, but I also have a MacBook Air M1 that I use when I need to work from a public coffee shop with a friend or meet with a client.
 
 Link to [Mac Mini M1](https://www.apple.com/mac-mini).  
 Link to [Macbook Air M1](https://www.apple.com/macbook-air/).
 
 ### Keyboard
 
-My keyboard is a Keycheron K2, a mechanical keyboard with red switches because I like the linear feeling of these switches, I found my hands a little more exhausted at the end of the day with switches more bumpy like the blue ones. I used to be happy with the apple keyboard because I had my habits on it but after a few weeks of intensive use of a mechanical keyboard I couldn't return from it. In my workflow I use a lot my keyboard since my text editor is terminal based, also, my internet navigation is keyboard driven thanks to the safari extension Vimari !
+My keyboard of choice is the Keychron K2, a mechanical keyboard with red switches. I prefer the linear feeling of these switches as they feel smoother to type on, which helps reduce the strain on my hands. While I used to be content with the Apple keyboard due to familiarity, I quickly realized the benefits of using a mechanical keyboard after just a few weeks of intensive use. Since I rely heavily on my keyboard in my workflow, especially since my text editor is terminal-based, I find that the Keychron K2 significantly improves my typing experience. Additionally, I use the Safari extension Vimari for keyboard-driven internet navigation.
 
 Link to [Keycheron K2](https://www.keychron.uk/products/keychron-k2-hot-swappable-wireless-mechanical-keyboard)
 
 ### Monitors
 
-My monitors are 2 Samsung WQHD 144hz 27". I like to have space to put all I need on my screens at the same time and don't have to switch between windows too much, again, because I try to remove my hands from my keyboard the less I can. I use the screens in the landscape mode, I also tried the portrait mode but it felt weird and the profit it should give for programming didn't convince me at all.
+I use two Samsung WQHD 144Hz 27" monitors in my workstation setup. I prefer having ample screen space to display all the windows and applications that I need at once, which helps minimize the need for excessive window switching and thus reduces the amount of time I need to spend switching between my keyboard and my mouse. I use the monitors in landscape mode, as I find portrait mode to be uncomfortable and didn't see any significant benefits to using it for programming.
 
 Link to [Samsung WQHD 144hz 27"](https://www.amazon.fr/gp/product/B07FCM5WXF/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 
 ### Audio
 
-Music take an important place in my days so I invested in the Sony XM4 few years ago, and I'm still pretty happy with it. When i need more mobility I'm taking my airpods pro but I always go with my sony if I need quality and comfort.
+Music plays an important role in my day-to-day routine, so a few years ago, I invested in the Sony XM4 headphones. I'm still quite pleased with them, as they provide excellent sound quality and comfort. When I need more mobility, I switch to my AirPods Pro, but I always prefer to use my Sony headphones when I'm looking for the best audio experience.
 
 Link to [Sony XM4](https://www.sony.fr/electronics/casque-bandeau/wh-1000xm4)
 
@@ -37,11 +37,14 @@ Link to [Sony XM4](https://www.sony.fr/electronics/casque-bandeau/wh-1000xm4)
 
 ### Text Editor
 
-I'm the type of dev who have switched a lot of times between text editor, I've probably tried every decent editor and i ended using VIM. I've started
-my dev journey by writing code using a terminal based text editor with EMACS when I was student. Then I was in a discovering phase where I tried Sublim Text, Visual Studio Code, IntelliJ, Atom, and few others. In every single one of them there was something I didn't like, from the lack of customisation to the over consumption of resources I wasn't fully satisfied of my workflow while I was programming. I finally come back t the basics and try another terminal based text editor, VIM. It can be really powerful once you get used to the keyboard only editing and you customized it to your needs. For the customisation part I use LUNAR VIM which is a pre configured version of VIM. Since 2 years now I use only VIM to edit my code and even this blog article you are reading right now. I'm pretty happy with the workflow I'm working with now and I don't feel anymore the need to switch between text editors.
+As a developer, I've tried my fair share of text editors over the years, experimenting with everything from EMACS to Sublime Text, Visual Studio Code, IntelliJ, Atom, and others. However, in each one, I found something that didn't quite meet my needs, whether it was a lack of customization options or excessive resource consumption. Eventually, I returned to basics and tried a terminal-based text editor: VIM. While it takes time to adjust to its keyboard-only editing style, VIM can be incredibly powerful and customizable. To help with customization, I use LUNAR VIM, which is a pre-configured version of VIM. For the past two years, I've used VIM exclusively to write code, including this very blog post. I'm quite satisfied with my current workflow and have no desire to switch to another text editor.
 
 Link to [Lunar VIM](https://www.lunarvim.org)
 
 ### Utilities
 
-I don't use a lot of different software in my daily routine, I'm into minimalism and I think the less I use the more efficient I'm. This being said, I always have Apple music open to have an ambient sound either with music or podcast. I also use TickTick for my weekly planning/task management and slack to communicate easily with people I work with.
+I don't use a lot of different software in my daily routine, as I prefer a minimalist approach to maximize efficiency. That being said, I always have Apple Music open to provide ambient sound, whether it's music or a podcast. Additionally, I use TickTick for weekly planning and task management, and Slack for seamless communication with my colleagues.
+
+### Conclusion
+
+In conclusion, I am a firm believer in minimalism and strive to maintain a streamlined setup to maximize productivity and minimize distractions. My tools and equipment are carefully selected to cater to my specific needs, and I am always on the lookout for ways to improve my workflow. By keeping my setup lean and efficient, I am able to focus my attention on what truly matters: crafting excellent software and enjoying the process. Whether you are a software developer or someone who simply wants to optimize their work environment, I encourage you to explore the possibilities and find what works best for you.

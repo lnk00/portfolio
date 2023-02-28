@@ -38,7 +38,7 @@ export default component$(() => {
             location.pathname.includes('/projects') ? 'text-teal-400' : ''
           }`}
         >
-          Projects
+          Projects 🚧
         </a>
         <a
           href="/uses"
@@ -46,7 +46,7 @@ export default component$(() => {
             location.pathname.includes('/uses') ? 'text-teal-400' : ''
           }`}
         >
-          Uses
+          Uses 🚧
         </a>
       </div>
       <a href="https://github.com/lnk00">
