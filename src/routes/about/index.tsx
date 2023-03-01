@@ -33,9 +33,7 @@ export default component$(() => {
                 articles!
               </p>
             </div>
-            <div className="w-full bg-teal-400 rounded-lg shadow-xl mb-auto rotate-3 flex-shrink-[10]">
-              <img src="/images/perso-dev.png" />
-            </div>
+            <img src="/images/wink.png" className="h-96 drop-shadow-2xl" />
           </div>
         </div>
         <div className="h-0.5 w-full bg-zinc-100 mb-16"></div>
