@@ -38,7 +38,7 @@ export default component$(() => {
             location.pathname.includes('/projects') ? 'text-teal-400' : ''
           }`}
         >
-          Projects 🚧
+          Projects
         </a>
         <a
           href="/uses"

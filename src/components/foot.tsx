@@ -14,7 +14,7 @@ export default component$(() => {
           Articles
         </a>
         <a className="mr-6 cursor-pointer hover:text-teal-400" href="/projects">
-          Projects 🚧
+          Projects
         </a>
         <a className="cursor-pointer hover:text-teal-400">Uses 🚧</a>
       </div>
