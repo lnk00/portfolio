@@ -15,7 +15,7 @@ export default component$(() => {
   const articles = useEndpoint<typeof onGet>();
 
   return (
-    <div className="bg-zinc-50 sm:px-28">
+    <div className="bg-zinc-50 lg:px-28">
       <div className="mx-auto max-w-7xl sm:px-10 lg:px-20 bg-white ring-1 ring-zinc-100 pb-16 min-h-screen">
         <div>
           <Nav></Nav>

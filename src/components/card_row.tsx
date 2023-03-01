@@ -62,11 +62,13 @@ export default component$((props: CardRowProps) => {
   });
 
   return (
-    <div className={'flex gap-8 ' + (props.reversed ? 'flex-row-reverse' : '')}>
+    <div
+      className={'lg:flex gap-8 ' + (props.reversed ? 'flex-row-reverse' : '')}
+    >
       <div
         onMouseEnter$={onHover}
         onMouseLeave$={onLeave}
-        className="group h-72 w-1/3 bg-teal-400 rounded-lg shadow-lg shrink-0 hover:w-2/3 transition-all duration-300 p-4 overflow-hidden relative delay-300 hover:delay-[400ms] cursor-pointer"
+        className="group h-72 w-full lg:w-1/3 mb-8 lg:mb-0 bg-teal-400 rounded-lg shadow-lg shrink-0 hover:w-2/3 transition-all duration-300 p-4 overflow-hidden relative delay-300 hover:delay-[400ms] cursor-pointer"
       >
         <div className="flex">
           <div>
