@@ -33,7 +33,7 @@ export default component$(() => {
                 articles!
               </p>
             </div>
-            <img src="/images/wink.png" className="h-96 drop-shadow-2xl" />
+            <img src="/images/wink.png" className="h-72 drop-shadow-2xl" />
           </div>
         </div>
         <div className="h-0.5 w-full bg-zinc-100 mb-16"></div>
