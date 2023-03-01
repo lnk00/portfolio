@@ -40,14 +40,6 @@ export default component$(() => {
         >
           Projects
         </a>
-        <a
-          href="/uses"
-          className={`cursor-pointer hover:text-teal-400 ${
-            location.pathname.includes('/uses') ? 'text-teal-400' : ''
-          }`}
-        >
-          Uses 🚧
-        </a>
       </div>
       <a href="https://github.com/lnk00">
         <img

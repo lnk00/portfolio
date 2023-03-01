@@ -16,7 +16,6 @@ export default component$(() => {
         <a className="mr-6 cursor-pointer hover:text-teal-400" href="/projects">
           Projects
         </a>
-        <a className="cursor-pointer hover:text-teal-400">Uses 🚧</a>
       </div>
       <p className="ml-auto text-sm text-zinc-300">
         © 2023 Damien Dumontet. All rights reserved.

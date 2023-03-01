@@ -180,7 +180,7 @@ export default component$(() => {
                 </a>
               </div>
             </div>
-            <div className="w-full h-72  rounded-lg mt-8 flex items-center justify-center relative">
+            <div className="w-full h-72 bg-zinc-50 rounded-lg mt-8 mb-8 flex items-center justify-center relative">
               <p className="text-zinc-800 text-3xl font-bold">
                 More incoming ...
               </p>
