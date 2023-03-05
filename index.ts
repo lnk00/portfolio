@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import { supabase } from "./constants/supabase";
 
 dotenv.config();
 
@@ -10,8 +11,11 @@ app.use(express.static(__dirname + "/public"));
 
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {
-  res.render("pages/index");
+app.get("/", async (req, res) => {
+  const articles = await supabase.from("articles").select();
+  res.render("pages/index", {
+    articles: articles.data,
+  });
 });
 
 app.listen(port, () => {
