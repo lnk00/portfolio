@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Header from "../components/Header.astro";
+import ArticlePreview from "../components/ArticlesPreview";
 ---
 
 <Layout title="Damien Dumontet - hey!">
   <main>
     <Nav />
     <Header />
+    <ArticlePreview client:visible />
   </main>
 </Layout>
