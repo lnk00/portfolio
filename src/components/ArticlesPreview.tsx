@@ -17,13 +17,13 @@ interface ArticleProps {
 
 function Article(props: ArticleProps): React.ReactElement {
   return (
-    <div className="flex h-44 not-last:mb-16">
+    <div className="flex-col sm:flex sm:flex-row sm:h-44 not-last:mb-16">
       <img
         src={`${import.meta.env.PUBLIC_SUPABASE_IMAGES}/${props.article.img}`}
         alt="abstract"
-        className="h-44 w-44 shrink-0 rounded-lg shadow-lg"
+        className="h-44 sm:w-44 shrink-0 rounded-lg shadow-lg"
       />
-      <div className="ml-8 flex flex-col h-full">
+      <div className="h-64 mt-4 sm:mt-0 sm:ml-8 sm:h-full flex flex-col">
         <div className="flex items-center mb-2">
           <div className="h-4 w-0.5 bg-zinc-200 mr-2"></div>
           <p className="text-sm text-zinc-400">
@@ -88,7 +88,7 @@ export default function ArticlePreview(): React.ReactElement {
         hobbies. do not hesitate to reach me if you want more explanations about
         a subject I talked about.
       </p>
-      <div className="h-0.5 w-full bg-zinc-100 my-12"></div>
+      <div className="h-0.5 w-full bg-zinc-100 my-16"></div>
       {articles.map((article) => (
         <Article article={article} key={article.id}></Article>
       ))}
