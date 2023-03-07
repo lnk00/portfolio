@@ -1,11 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
+import ArticlePreview from "../components/ArticlesPreview";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Damien Dumontet - articles">
   <main>
     <Nav />
-    <div>Articles</div>
+    <ArticlePreview client:load />
+    <Footer />
   </main>
 </Layout>
