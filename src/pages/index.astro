@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Header from "../components/Header.astro";
 import ArticlePreview from "../components/ArticlesPreview";
+import Newsletter from "../components/Newsletter.astro";
 ---
 
 <Layout title="Damien Dumontet - hey!">
@@ -10,5 +11,6 @@ import ArticlePreview from "../components/ArticlesPreview";
     <Nav />
     <Header />
     <ArticlePreview client:visible />
+    <Newsletter />
   </main>
 </Layout>
