@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import { Converter } from "showdown";
+import Footer from "../../components/Footer.astro";
+
+const { id } = Astro.params;
+
+const converter = new Converter();
+
+const res = await fetch(`${import.meta.env.PUBLIC_SUPABASE_ARTICLES}/${id}.md`);
+const file = await res.blob();
+const md = await file.text();
+
+const article = converter.makeHtml(md);
+---
+
+<Layout title="Damien Dumontet - article">
+  <main>
+    <Nav />
+    <div class="m-auto max-w-prose pt-12">
+      <a
+        class="flex items-center cursor-pointer text-teal-400 hover:text-teal-300"
+        href="/articles"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            d="M17 10a.75.75 0 01-.75.75H5.612l4.158 3.96a.75.75 0 11-1.04 1.08l-5.5-5.25a.75.75 0 010-1.08l5.5-5.25a.75.75 0 111.04 1.08L5.612 9.25H16.25A.75.75 0 0117 10z"
+          ></path>
+        </svg>
+
+        <p class="ml-2">All articles</p>
+      </a>
+    </div>
+    <div
+      class="prose prose-zinc prose-img:rounded-lg prose-img:shadow-lg prose-img:mx-auto m-auto pt-12"
+      set:html={article}
+    />
+    <Footer />
+  </main>
+</Layout>
