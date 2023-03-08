@@ -85,7 +85,7 @@ export default function ArticlePreview(): React.ReactElement {
       </h2>
       <p className="mt-3 text-xl text-zinc-500 sm:mt-4">
         These are my last publications about my works, my learnings, and
-        hobbies. do not hesitate to reach me if you want more explanations about
+        hobbies. Do not hesitate to reach me if you want more explanations about
         a subject I talked about.
       </p>
       <div className="h-0.5 w-full bg-zinc-100 my-16"></div>
