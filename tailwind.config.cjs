@@ -14,8 +14,13 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     require("tailwind-scrollbar-hide"),
-    plugin(function ({ addVariant }) {
+    plugin(function ({ addVariant, matchUtilities }) {
       addVariant("not-last", "&:not(:last-child)");
+      matchUtilities({
+        bgimg: (value) => ({
+          backgroundImage: value,
+        }),
+      });
     }),
   ],
 };

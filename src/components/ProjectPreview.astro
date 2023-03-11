@@ -1,0 +1,51 @@
+---
+import type { IProject } from "../models/project.model";
+
+interface Props {
+  project: IProject;
+}
+
+const { project } = Astro.props;
+---
+
+<div
+  class={`before:bgimg-[var(--img-url)] w-full ring-1 ring-[var(--ring-color)] p-8 rounded-lg bg-[var(--main-color)] shadow-lg hover:bg-[var(--hover-color)] hover:shadow-sm transition-all duration-700 cursor-pointer relative overflow-hidden before:content-[' '] before:block before:absolute before:h-[200%] before:w-full before:-top-1/2 before:left-0 before:bg-contain before:bg-no-repeat before:opacity-20 before:bg-top before:rotate-45 not-last:mb-8 before:blur-sm hover:before:scale-150 before:transition-all before:duration-700`}
+  style={`--img-url: url('../../assets/images/${project.background}'); --main-color: ${project.color}; --hover-color: ${project.hoverColor}; --ring-color: ${project.ringColor}`}
+  id="test"
+>
+  <div class="flex items-center">
+    <div
+      class="w-10 h-10 bg-white rounded-md mr-4 flex justify-center items-center shadow-lg p-2 z-10"
+    >
+      <img src={`../../assets/images/${project.icon}`} />
+    </div>
+    <div class="font-bold text-white text-3xl text-center relative z-10">
+      {project.title}
+    </div>
+    <a href={project.github} class="ml-auto z-10">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="w-8 h-8 text-white"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </a>
+  </div>
+  <div
+    class="flex shrink-0 items-start gap-3 overflow-x-scroll scrollbar-hide mt-8"
+  >
+    {
+      project.stack.map((tech) => (
+        <div class="inline-flex shrink-0 items-center justify-center py-1 px-3 bg-zinc-900 bg-opacity-40 rounded-md text-white z-10">
+          <img src={`../../assets/images/${tech.icon}`} class="w-4 h-4 mr-2" />
+          {tech.label}
+        </div>
+      ))
+    }
+  </div>
+</div>

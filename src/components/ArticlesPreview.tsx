@@ -2,14 +2,7 @@ import type React from "react";
 import { useEffect, useState } from "react";
 import { supabase } from "../helpers/supabase";
 import dayjs from "dayjs";
-
-interface IArticle {
-  id: number;
-  title: string;
-  overview: string;
-  img: string;
-  created_at: string;
-}
+import type { IArticle } from "../models/article.model";
 
 interface ArticleProps {
   article: IArticle;
@@ -41,7 +34,7 @@ function Article(props: ArticleProps): React.ReactElement {
         </div>
 
         <a
-          className="flex items-center text-teal-400 hover:text-teal-300 cursor-pointer mt-auto"
+          className="flex items-center text-teal-400 hover:text-teal-300 cursor-pointer mt-auto transition-all duration-300"
           href={`/article/${props.article.title
             .toLowerCase()
             .replaceAll(" ", "-")
