@@ -18,9 +18,9 @@ const blogPosts = await getCollection("blog");
     blogPosts.map((post) => (
       <div class="flex-col sm:flex sm:flex-row sm:h-44 not-last:mb-16">
         <img
-          src={`../../assets/images/${post.data.image}`}
+          src={`/images/${post.data.image}`}
           alt="abstract"
-          class="h-44 sm:w-44 shrink-0 rounded-lg shadow-lg"
+          class="h-44 sm:w-44 shrink-0 rounded-lg shadow-lg object-cover"
         />
         <div class="h-64 mt-4 sm:mt-0 sm:ml-8 sm:h-full flex flex-col">
           <div class="flex items-center mb-2">
