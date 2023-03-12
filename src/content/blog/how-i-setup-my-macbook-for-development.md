@@ -1,5 +1,6 @@
 ---
 title: How I setup my Macbook for development
+date: March 12, 2023
 image: how-i-setup-my-macbook-for-development.jpg
 summary: Ever since I began learning software development, I've been on the quest for the ultimate workstation setup that would maximize my productivity and enable me to enjoy crafting software. I've experimented with various configurations, software, and workflows, but I never quite found the perfect fit. However, I'm excited to share that I've finally discovered my dream setup and workflow that allows me to be both productive and happy when programming. In this article, I'll explain how and why I configured my work environment in the way that I did.
 ---
