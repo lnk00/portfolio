@@ -22,7 +22,7 @@ const { project } = Astro.props;
     <div class="font-bold text-white text-3xl text-center relative z-10">
       {project.title}
     </div>
-    <a href={project.github} class="ml-auto z-10">
+    <a href={`/project/${project.title}`} class="ml-auto z-10">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

@@ -1,0 +1,27 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+
+import projectDescriptor from "../../descriptors/projects.json";
+import type { IProject } from "../../models/project.model";
+
+export async function getStaticPaths() {
+  const projects: IProject[] = projectDescriptor.projects;
+
+  return projects.map((project) => ({
+    params: { title: project.title },
+    props: { project },
+  }));
+}
+
+const { title } = Astro.params;
+---
+
+<Layout title="Damien Dumontet - project">
+  <main>
+    <Nav />
+    <h1>{title}</h1>
+    <Footer />
+  </main>
+</Layout>
