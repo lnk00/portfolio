@@ -1,18 +1,21 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
-import { Converter } from "showdown";
 import Footer from "../../components/Footer.astro";
+import { getCollection, getEntryBySlug } from "astro:content";
 
-const { id } = Astro.params;
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
 
-const converter = new Converter();
+const { slug } = Astro.params;
 
-const res = await fetch(`${import.meta.env.PUBLIC_SUPABASE_ARTICLES}/${id}.md`);
-const file = await res.blob();
-const md = await file.text();
-
-const article = converter.makeHtml(md);
+const post = await getEntryBySlug("blog", slug!);
+const { Content } = await post!.render();
 ---
 
 <Layout title="Damien Dumontet - article">
@@ -39,8 +42,9 @@ const article = converter.makeHtml(md);
     </div>
     <div
       class="prose prose-zinc prose-img:rounded-lg prose-img:shadow-lg prose-img:mx-auto m-auto pt-12"
-      set:html={article}
-    />
+    >
+      <Content />
+    </div>
     <Footer />
   </main>
 </Layout>
