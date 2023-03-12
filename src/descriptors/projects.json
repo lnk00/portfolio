@@ -1,21 +1,21 @@
 {
   "projects": [
     {
-      "title": "Blog",
-      "icon": "project-blog.png",
+      "title": "Portfolio",
+      "icon": "website.png",
       "github": "https://github.com/lnk00/portfolio",
-      "background": "portfolio-main.png",
+      "background": "/portfolio/background.png",
       "stack": [
         {
-          "icon": "react-logo.svg",
+          "icon": "react.svg",
           "label": "react"
         },
         {
-          "icon": "typescript-logo.svg",
+          "icon": "typescript.svg",
           "label": "typescript"
         },
         {
-          "icon": "astro-logo.svg",
+          "icon": "astro.svg",
           "label": "astro"
         }
       ],
@@ -25,16 +25,16 @@
     },
     {
       "title": "Oney Bank",
-      "icon": "project-mobile.png",
+      "icon": "mobile.png",
       "github": "https://github.com/lnk00/portfolio",
-      "background": "oney-main.png",
+      "background": "/oney/background.png",
       "stack": [
         {
-          "icon": "react-logo.svg",
+          "icon": "react.svg",
           "label": "react-native"
         },
         {
-          "icon": "typescript-logo.svg",
+          "icon": "typescript.svg",
           "label": "typescript"
         }
       ],
@@ -43,21 +43,21 @@
       "ringColor": "#00243e"
     },
     {
-      "title": "Portfolio",
-      "icon": "project-blog.png",
+      "title": "Old portfolio",
+      "icon": "website.png",
       "github": "https://github.com/lnk00/portfolio",
-      "background": "old-portfolio-main.png",
+      "background": "/old-portfolio/background.png",
       "stack": [
         {
-          "icon": "react-logo.svg",
+          "icon": "react.svg",
           "label": "react"
         },
         {
-          "icon": "typescript-logo.svg",
+          "icon": "typescript.svg",
           "label": "typescript"
         },
         {
-          "icon": "astro-logo.svg",
+          "icon": "astro.svg",
           "label": "astro"
         }
       ],
@@ -67,16 +67,16 @@
     },
     {
       "title": "Birthd",
-      "icon": "project-mobile.png",
+      "icon": "mobile.png",
       "github": "https://github.com/lnk00/portfolio",
-      "background": "birthday-main.png",
+      "background": "/birthd/background.png",
       "stack": [
         {
-          "icon": "react-logo.svg",
+          "icon": "react.svg",
           "label": "react-native"
         },
         {
-          "icon": "typescript-logo.svg",
+          "icon": "typescript.svg",
           "label": "typescript"
         }
       ],
