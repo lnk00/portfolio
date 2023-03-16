@@ -3,13 +3,16 @@ export interface ITech {
   label: string;
 }
 
+export interface IRow {
+  image: string;
+  title: string;
+  description: string;
+}
+
 export interface IProject {
   title: string;
-  icon: string;
-  github: string;
+  link: string;
   background: string;
   stack: ITech[];
-  color: string;
-  hoverColor: string;
-  ringColor: string;
+  rows: IRow[];
 }

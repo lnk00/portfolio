@@ -2,8 +2,7 @@
   "projects": [
     {
       "title": "Portfolio",
-      "icon": "website.png",
-      "github": "https://github.com/lnk00/portfolio",
+      "link": "https://github.com/lnk00/portfolio",
       "background": "/portfolio/background.png",
       "stack": [
         {
@@ -19,14 +18,27 @@
           "label": "astro"
         }
       ],
-      "color": "#14b8a5",
-      "hoverColor": "#60c7b6",
-      "ringColor": "#10a08f"
+      "rows": [
+        {
+          "image": "/portfolio/row1.png",
+          "title": "Articles",
+          "Description": "As someone who is passionate about all things technology, I love sharing my knowledge and insights with others. Whether it's discussing the latest trends and innovations in the industry, exploring new programming languages and frameworks, or sharing my own experiences with various tech tools and platforms, you'll find plenty of engaging and informative articles here."
+        },
+        {
+          "image": "/portfolio/row2.png",
+          "title": "Projects",
+          "Description": "As someone who is passionate about all things technology, I love sharing my knowledge and insights with others. Whether it's discussing the latest trends and innovations in the industry, exploring new programming languages and frameworks, or sharing my own experiences with various tech tools and platforms, you'll find plenty of engaging and informative articles here."
+        },
+        {
+          "image": "/portfolio/row3.png",
+          "title": "Astro",
+          "Description": "As someone who is passionate about all things technology, I love sharing my knowledge and insights with others. Whether it's discussing the latest trends and innovations in the industry, exploring new programming languages and frameworks, or sharing my own experiences with various tech tools and platforms, you'll find plenty of engaging and informative articles here."
+        }
+      ]
     },
     {
       "title": "Oney Bank",
-      "icon": "mobile.png",
-      "github": "https://github.com/lnk00/portfolio",
+      "link": "https://github.com/lnk00/portfolio",
       "background": "/oney/background.png",
       "stack": [
         {
@@ -38,14 +50,17 @@
           "label": "typescript"
         }
       ],
-      "color": "#002b49",
-      "hoverColor": "#33516b",
-      "ringColor": "#00243e"
+      "rows": [
+        {
+          "image": "/portfolio/row1.png",
+          "title": "Articles",
+          "Description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+        }
+      ]
     },
     {
       "title": "Old portfolio",
-      "icon": "website.png",
-      "github": "https://github.com/lnk00/portfolio",
+      "link": "https://github.com/lnk00/portfolio",
       "background": "/old-portfolio/background.png",
       "stack": [
         {
@@ -61,14 +76,17 @@
           "label": "astro"
         }
       ],
-      "color": "#34d399",
-      "hoverColor": "#6fddad",
-      "ringColor": "#2cb784"
+      "rows": [
+        {
+          "image": "/portfolio/row1.png",
+          "title": "Articles",
+          "Description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+        }
+      ]
     },
     {
       "title": "Birthd",
-      "icon": "mobile.png",
-      "github": "https://github.com/lnk00/portfolio",
+      "link": "https://github.com/lnk00/portfolio",
       "background": "/birthd/background.png",
       "stack": [
         {
@@ -80,9 +98,13 @@
           "label": "typescript"
         }
       ],
-      "color": "#f8d58a",
-      "hoverColor": "#fadea3",
-      "ringColor": "#d8b977"
+      "rows": [
+        {
+          "image": "/portfolio/row1.png",
+          "title": "Articles",
+          "Description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+        }
+      ]
     }
   ]
 }
