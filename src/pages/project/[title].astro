@@ -35,7 +35,22 @@ const project = projectDescriptor.projects.find(
       years. Whether undertaken as a personal endeavor or professionally, each
       project was executed with passion and expertise.
     </p>
+
     <div class="h-0.5 w-full bg-zinc-100 my-16"></div>
+
+    <div class="my-8 flex items-center gap-4 w-full">
+      {
+        project?.stack.map((tech) => (
+          <div class="bg-teal-400 rounded-md text-white px-5 py-1 ring-1 ring-teal-500 flex items-center justify-center">
+            <img
+              src={`/images/logos/${tech.icon}`}
+              class="h-5 w-5 mr-2 filter invert"
+            />
+            <p>{tech.label}</p>
+          </div>
+        ))
+      }
+    </div>
 
     {
       project?.rows.map((row) => (
@@ -43,6 +58,7 @@ const project = projectDescriptor.projects.find(
           <div class="w-[49%] rounded-lg shadow-lg overflow-hidden">
             <img
               src={`/images/projects/${row.image}`}
+              alt="project presentation"
               class="w-full object-cover group-hover/row:scale-125 group-hover/row:rotate-3 transition-all duration-700"
             />
           </div>
