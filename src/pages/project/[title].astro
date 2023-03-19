@@ -52,9 +52,7 @@ const project = projectDescriptor.projects.find(
       {project?.description}
     </p>
 
-    <div class="h-0.5 w-full bg-zinc-100 my-16"></div>
-
-    <div class="my-8 flex items-center gap-4 w-full">
+    <div class="mt-5 flex items-center gap-4 w-full">
       {
         project?.stack.map((tech) => (
           <div class="bg-teal-400 rounded-md text-white px-5 py-1 ring-1 ring-teal-500 flex items-center justify-center">
@@ -67,6 +65,7 @@ const project = projectDescriptor.projects.find(
         ))
       }
     </div>
+    <div class="h-0.5 w-full bg-zinc-100 mt-8 mb-16"></div>
 
     {
       project?.rows.map((row) => (

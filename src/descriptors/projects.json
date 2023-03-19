@@ -7,16 +7,20 @@
       "background": "/portfolio/background.png",
       "stack": [
         {
-          "icon": "react.svg",
-          "label": "react"
-        },
-        {
           "icon": "typescript.svg",
           "label": "typescript"
         },
         {
           "icon": "astro.svg",
           "label": "astro"
+        },
+        {
+          "icon": "html.svg",
+          "label": "html"
+        },
+        {
+          "icon": "css.svg",
+          "label": "css"
         }
       ],
       "rows": [
