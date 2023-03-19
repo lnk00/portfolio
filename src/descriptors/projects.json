@@ -26,23 +26,23 @@
           "subtitle": "Hand crafted blog posts",
           "link": "/articles",
           "button": "see articles",
-          "Description": "As someone who is passionate about all things technology, I love sharing my knowledge and insights with others. Whether it's discussing the latest trends and innovations in the industry, exploring new programming languages and frameworks, or sharing my own experiences with various tech tools and platforms, you'll find plenty of engaging and informative articles here."
+          "description": "As someone who is passionate about all things technology, I love sharing my knowledge and insights with others. Whether it's discussing the latest trends and innovations in the industry, exploring new programming languages and frameworks, or sharing my own experiences with various tech tools and platforms, you'll find plenty of engaging and informative articles here."
         },
         {
           "image": "/portfolio/row2.png",
           "title": "Projects",
-          "subtitle": "Hand crafted blog posts",
-          "link": "/articles",
-          "button": "see articles",
-          "Description": "As someone who is passionate about all things technology, I love sharing my knowledge and insights with others. Whether it's discussing the latest trends and innovations in the industry, exploring new programming languages and frameworks, or sharing my own experiences with various tech tools and platforms, you'll find plenty of engaging and informative articles here."
+          "subtitle": "Made with love",
+          "link": "/projects",
+          "button": "see projects",
+          "description": "This section features my latest projects. For each project, you can find a brief description, the technology stack used to build it, stunning illustrations, and a link to learn more about it. If I deem it relevant, some of these projects will have a more in-depth presentation in the blog section."
         },
         {
           "image": "/portfolio/row3.png",
           "title": "Astro",
-          "subtitle": "Hand crafted blog posts",
-          "link": "/articles",
-          "button": "see articles",
-          "Description": "As someone who is passionate about all things technology, I love sharing my knowledge and insights with others. Whether it's discussing the latest trends and innovations in the industry, exploring new programming languages and frameworks, or sharing my own experiences with various tech tools and platforms, you'll find plenty of engaging and informative articles here."
+          "subtitle": "Blazingly fast",
+          "link": "https://astro.build/",
+          "button": "astro website",
+          "description": "I used Astro, a JavaScript web framework, to build this portfolio/blog. One of the key features that drew me to this framework was its speed promise. Since I didn't need a lot of interactivity, using a single-page application (SPA) framework like React or Angular would have been a waste of resources. My experience using Astro was fantastic, resulting in a blazingly fast portfolio. Therefore, I recommend using Astro whenever possible."
         }
       ]
     },
@@ -68,7 +68,7 @@
           "subtitle": "Hand crafted blog posts",
           "link": "/articles",
           "button": "see articles",
-          "Description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
         }
       ]
     },
@@ -98,7 +98,7 @@
           "subtitle": "Hand crafted blog posts",
           "link": "/articles",
           "button": "see articles",
-          "Description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
         }
       ]
     },
@@ -124,7 +124,7 @@
           "subtitle": "Hand crafted blog posts",
           "link": "/articles",
           "button": "see articles",
-          "Description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
         }
       ]
     }
