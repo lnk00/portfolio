@@ -3,12 +3,13 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev --host",
+    "dev": "concurrently \"astro dev --host\" \"npm run prettier-watch\" \"npm run check\"",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check --watch",
-    "astro": "astro"
+    "astro": "astro",
+    "prettier-watch": "npx onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
   },
   "dependencies": {
     "@astrojs/react": "^2.0.2",
