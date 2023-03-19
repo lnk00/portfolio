@@ -62,12 +62,13 @@ const project = projectDescriptor.projects.find(
           </div>
           <div class="w-full sm:w-[49%] bg-zinc-50 rounded-lg p-8">
             <div class="text-3xl text-zinc-800 font-bold">{row.title}</div>
-            <div class="text-2xl text-zinc-400 font-bold">
-              Hand crafted blog posts
-            </div>
+            <div class="text-2xl text-zinc-400 font-bold">{row.subtitle}</div>
             <div class="text-lg text-zinc-600 mt-4">{row.Description}</div>
-            <div class="group/button ring-1 ring-teal-500 bg-teal-400 text-white rounded-full py-2 px-4 mt-6 font-semibold inline-flex justify-center items-center cursor-pointer hover:bg-teal-300 transition-all duration-300 shadow-lg hover:shadow-sm">
-              <p>see articles</p>
+            <a
+              href={row.link}
+              class="group/button ring-1 ring-teal-500 bg-teal-400 text-white rounded-full py-2 px-4 mt-6 font-semibold inline-flex justify-center items-center cursor-pointer hover:bg-teal-300 transition-all duration-300 shadow-lg hover:shadow-sm"
+            >
+              <p>{row.button}</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -76,7 +77,7 @@ const project = projectDescriptor.projects.find(
               >
                 <path d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" />
               </svg>
-            </div>
+            </a>
           </div>
         </div>
       ))

@@ -6,6 +6,9 @@ export interface ITech {
 export interface IRow {
   image: string;
   title: string;
+  subtitle: string;
+  link: string;
+  button: string;
   description: string;
 }
 
