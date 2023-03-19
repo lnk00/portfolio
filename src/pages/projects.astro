@@ -28,7 +28,7 @@ const projects: IProject[] = projectDescriptor.projects;
         projects.map((project) => (
           <a
             href={`/project/${project.title.toLowerCase()}`}
-            class="group p-8 hover:bg-zinc-50 rounded-lg transition-all duration-700 cursor-pointer flex-[50%]"
+            class="group not-last:mb-16 sm:mb-0 sm:p-8 hover:bg-zinc-50 rounded-lg transition-all duration-700 cursor-pointer flex-[50%]"
           >
             <div class="flex items-center mb-4">
               <div class="text-zinc-800 text-3xl font-bold">

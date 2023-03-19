@@ -2,6 +2,7 @@
   "projects": [
     {
       "title": "Portfolio",
+      "description": "This project is my personal website/blog, which I created to showcase a more modern design and share my thoughts with others. You can find a brief introduction about myself, as well as information on the most significant projects I've worked on. Additionally, there's a blog section where you can read articles about technology.",
       "link": "https://github.com/lnk00/portfolio",
       "background": "/portfolio/background.png",
       "stack": [
@@ -38,6 +39,7 @@
     },
     {
       "title": "Oney Bank",
+      "description": "This project is my personal website/blog, which I created to showcase a more modern design and share my thoughts with others. You can find a brief introduction about myself, as well as information on the most significant projects I've worked on. Additionally, there's a blog section where you can read articles about technology.",
       "link": "https://github.com/lnk00/portfolio",
       "background": "/oney/background.png",
       "stack": [
@@ -60,6 +62,7 @@
     },
     {
       "title": "Old portfolio",
+      "description": "This project is my personal website/blog, which I created to showcase a more modern design and share my thoughts with others. You can find a brief introduction about myself, as well as information on the most significant projects I've worked on. Additionally, there's a blog section where you can read articles about technology.",
       "link": "https://github.com/lnk00/portfolio",
       "background": "/old-portfolio/background.png",
       "stack": [
@@ -86,6 +89,7 @@
     },
     {
       "title": "Birthd",
+      "description": "This project is my personal website/blog, which I created to showcase a more modern design and share my thoughts with others. You can find a brief introduction about myself, as well as information on the most significant projects I've worked on. Additionally, there's a blog section where you can read articles about technology.",
       "link": "https://github.com/lnk00/portfolio",
       "background": "/birthd/background.png",
       "stack": [

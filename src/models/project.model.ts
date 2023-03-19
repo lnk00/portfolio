@@ -11,6 +11,7 @@ export interface IRow {
 
 export interface IProject {
   title: string;
+  description: string;
   link: string;
   background: string;
   stack: ITech[];
