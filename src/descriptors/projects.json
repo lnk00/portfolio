@@ -63,11 +63,27 @@
         {
           "icon": "typescript.svg",
           "label": "typescript"
+        },
+        {
+          "icon": "html.svg",
+          "label": "html"
+        },
+        {
+          "icon": "css.svg",
+          "label": "css"
         }
       ],
       "rows": [
         {
-          "image": "/portfolio/row1.png",
+          "image": "/oney/row1.png",
+          "title": "Articles",
+          "subtitle": "Hand crafted blog posts",
+          "link": "/articles",
+          "button": "see articles",
+          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+        },
+        {
+          "image": "/oney/row2.png",
           "title": "Articles",
           "subtitle": "Hand crafted blog posts",
           "link": "/articles",
@@ -97,7 +113,15 @@
       ],
       "rows": [
         {
-          "image": "/portfolio/row1.png",
+          "image": "/old-portfolio/row1.png",
+          "title": "Articles",
+          "subtitle": "Hand crafted blog posts",
+          "link": "/articles",
+          "button": "see articles",
+          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+        },
+        {
+          "image": "/old-portfolio/row2.png",
           "title": "Articles",
           "subtitle": "Hand crafted blog posts",
           "link": "/articles",
@@ -123,7 +147,15 @@
       ],
       "rows": [
         {
-          "image": "/portfolio/row1.png",
+          "image": "/birthd/row1.png",
+          "title": "Articles",
+          "subtitle": "Hand crafted blog posts",
+          "link": "/articles",
+          "button": "see articles",
+          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+        },
+        {
+          "image": "/birthd/row2.png",
           "title": "Articles",
           "subtitle": "Hand crafted blog posts",
           "link": "/articles",
