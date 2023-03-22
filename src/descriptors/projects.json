@@ -135,8 +135,8 @@
       ]
     },
     {
-      "title": "Birthd",
-      "description": "This project is my personal website/blog, which I created to showcase a more modern design and share my thoughts with others. You can find a brief introduction about myself, as well as information on the most significant projects I've worked on. Additionally, there's a blog section where you can read articles about technology.",
+      "title": "Naia",
+      "description": "Naia is a birthday reminder app that allows you to send a photo to your friends on their special day. At the end of the day, a customized album is created with all the photos your friend have received. The application will evolve in the near future, so stay tuned! I will surely talk abouit it in my blog.",
       "link": "https://github.com/lnk00/portfolio",
       "background": "/birthd/background.png",
       "stack": [
@@ -147,24 +147,32 @@
         {
           "icon": "typescript.svg",
           "label": "typescript"
+        },
+        {
+          "icon": "html.svg",
+          "label": "html"
+        },
+        {
+          "icon": "css.svg",
+          "label": "css"
         }
       ],
       "rows": [
         {
           "image": "/birthd/row1.png",
-          "title": "Articles",
-          "subtitle": "Hand crafted blog posts",
-          "link": "/articles",
-          "button": "see articles",
-          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "title": "Your forgot ?",
+          "subtitle": "We got you",
+          "link": "https://github.com/lnk00/naia",
+          "button": "see github",
+          "description": "The truth is that every year, we tend to forget at least one birthday of a friend or family member. We both know how disappointing it can be when someone you love forgets to send you a little message on your special day. That's why we created Naia, the birthday reminder."
         },
         {
           "image": "/birthd/row2.png",
-          "title": "Articles",
-          "subtitle": "Hand crafted blog posts",
-          "link": "/articles",
-          "button": "see articles",
-          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "title": "Serverless",
+          "subtitle": "headaches less",
+          "link": "https://supabase.com/",
+          "button": "see supabase website",
+          "description": "The technology stack used to build Naia includes React Native for the mobile application and Supabase as a serverless backend. We chose Supabase because we needed a solution to handle authentication and sending of photos. Supabase does this quite well, so we didn't see the need to develop a custom solution."
         }
       ]
     }
