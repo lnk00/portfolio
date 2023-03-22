@@ -52,10 +52,12 @@ const project = projectDescriptor.projects.find(
       {project?.description}
     </p>
 
-    <div class="mt-5 flex items-center gap-4 w-full">
+    <div
+      class="mt-5 flex items-center gap-4 w-full overflow-scroll scrollbar-hide"
+    >
       {
         project?.stack.map((tech) => (
-          <div class="bg-teal-400 rounded-md text-white px-5 py-1 ring-1 ring-teal-500 flex items-center justify-center">
+          <div class="bg-teal-400 rounded-md text-white px-5 py-1 ring-1 ring-teal-500 flex items-center justify-center shrink-0">
             <img
               src={`/images/logos/${tech.icon}`}
               class="h-5 w-5 mr-2 filter invert"
