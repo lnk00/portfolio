@@ -52,7 +52,7 @@
     },
     {
       "title": "Oney Bank",
-      "description": "This project is my personal website/blog, which I created to showcase a more modern design and share my thoughts with others. You can find a brief introduction about myself, as well as information on the most significant projects I've worked on. Additionally, there's a blog section where you can read articles about technology.",
+      "description": "Oney is a French bank that specializes in split payments. With an Oney bank account, you can split every payment into three or four smaller payments each month. I helped build their new application using React Native.",
       "link": "https://github.com/lnk00/portfolio",
       "background": "/oney/background.png",
       "stack": [
@@ -76,19 +76,19 @@
       "rows": [
         {
           "image": "/oney/row1.png",
-          "title": "Articles",
-          "subtitle": "Hand crafted blog posts",
-          "link": "/articles",
-          "button": "see articles",
-          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "title": "Daily work",
+          "subtitle": "As a frontend engineed",
+          "link": "https://www.oney.com/",
+          "button": "see Oney website",
+          "description": "At Oney, my daily work involved developing the new Oney+ mobile application using React Native and integrating the UI team's designs. I also contributed to setting up a Domain Driven Development (DDD) architecture, which made it easier to update and maintain the application. Given the nature of the application - as it pertains to banking and deals with sensitive data - we placed extensive emphasis on ensuring its security during development."
         },
         {
           "image": "/oney/row2.png",
-          "title": "Articles",
-          "subtitle": "Hand crafted blog posts",
-          "link": "/articles",
-          "button": "see articles",
-          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "title": "Key feature",
+          "subtitle": "Split payments managment",
+          "link": "https://apps.apple.com/fr/app/oney-fractionnez-vos-d%C3%A9penses/id1350457378",
+          "button": "see application",
+          "description": "At Oney, I worked on the main feature of the platform, which enables users to split their payments over three or four months. Specifically, I developed the key screens and logic for managing split payments, such as cancellation or early settlement. To achieve this, I made extensive use of various APIs to retrieve the necessary data and perform required actions."
         }
       ]
     },
