@@ -94,39 +94,43 @@
     },
     {
       "title": "Old portfolio",
-      "description": "This project is my personal website/blog, which I created to showcase a more modern design and share my thoughts with others. You can find a brief introduction about myself, as well as information on the most significant projects I've worked on. Additionally, there's a blog section where you can read articles about technology.",
+      "description": "This project is my previous portfolio, which I had before the one you are currently viewing! The technology stack and goals of this portfolio differ significantly from the current one. Firstly, I used the Svelte Framework, a Single Page Application (SPA) framework, to build it. It was a great opportunity for me to learn a new framework, and I really enjoyed working on it. Additionally, unlike my current portfolio, it did not have a blog platform.",
       "link": "https://github.com/lnk00/portfolio",
       "background": "/old-portfolio/background.png",
       "stack": [
         {
-          "icon": "react.svg",
-          "label": "react"
+          "icon": "svelte.svg",
+          "label": "svelte"
         },
         {
           "icon": "typescript.svg",
           "label": "typescript"
         },
         {
-          "icon": "astro.svg",
-          "label": "astro"
+          "icon": "html.svg",
+          "label": "html"
+        },
+        {
+          "icon": "css.svg",
+          "label": "css"
         }
       ],
       "rows": [
         {
           "image": "/old-portfolio/row1.png",
-          "title": "Articles",
-          "subtitle": "Hand crafted blog posts",
-          "link": "/articles",
-          "button": "see articles",
-          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "title": "First step",
+          "subtitle": "Design creation",
+          "link": "https://github.com/lnk00/personalwebsite",
+          "button": "see on github",
+          "description": "My first portfolio was the first time I designed a website entirely on my own. Prior to that, I used to follow the design team I worked with and didn't really take part in the design process. After this first experience, I fell in love with the design process, and I continue to have a lot of fun participating in the design process for all the projects I work on."
         },
         {
           "image": "/old-portfolio/row2.png",
-          "title": "Articles",
-          "subtitle": "Hand crafted blog posts",
-          "link": "/articles",
-          "button": "see articles",
-          "description": "This is a description of the articles, make it long so i can see if the layout is well keeped even in repsonsive mode."
+          "title": "Svelte",
+          "subtitle": "A Lovely framework",
+          "link": "https://svelte.dev/",
+          "button": "see svelte website",
+          "description": "Svelte is a relatively new Single Page Application (SPA) framework compared to the giants like React, Angular, and Vue, but it is rapidly gaining popularity and is well-loved among the JavaScript development community. The main difference is that Svelte does the heavy work during a compile step that occurs when you build your app, instead of embedding a runtime in the browser."
         }
       ]
     },
