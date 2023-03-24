@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "concurrently \"astro dev --host\" \"npm run prettier-watch\" \"npm run check\"",
+    "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
