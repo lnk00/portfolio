@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Damien Dumontet - about">
+  <main class="flex flex-col h-full">
+    <Nav />
+    <div class="py-24 flex items-center h-full">
+      <div
+        class="flex flex-col-reverse sm:flex sm:flex-row sm:justify-around w-full"
+      >
+        <div class="max-w-lg mt-6">
+          <p class="text-5xl font-bold text-zinc-800 leading-tight mb-8">
+            I'm Damien Dumontet, I live between Paris and Montevideo.
+          </p>
+          <p class="text-justify text-zinc-500">
+            I am a passionate software engineer with 10 years of experience in
+            developing software and websites, both professionally and in my free
+            time. I have worked on several projects using modern frontend
+            frameworks such as React and Angular, as well as lower-level
+            technologies like C++ and Rust.
+            <br />
+            <br />I prioritize good UI and UX, ensuring that the code I write
+            respects the users' eyes and minds. I am an adept of TDD and DDD,
+            meaning that the code I write is always clean and readable.
+            <br />
+            <br />I enjoy traveling and stepping out of my comfort zone, which
+            is why I work remotely. This allows me to explore new places while
+            working on exciting projects.
+            <br />
+            <br />
+            In my free time, I have various hobbies, including 3D modeling with software
+            like Blender and aviation simulation. I invite you to discover more about
+            these hobbies by reading my blog articles!
+          </p>
+        </div>
+        <img
+          src="/images/wink.png"
+          class="h-24 w-24 sm:h-72 sm:w-auto drop-shadow-2xl"
+        />
+      </div>
+    </div>
+    <div class="mt-auto"></div>
+    <Footer />
+  </main>
+</Layout>

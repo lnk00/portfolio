@@ -1,0 +1,180 @@
+{
+  "projects": [
+    {
+      "title": "Portfolio",
+      "description": "This project is my personal website/blog, which I created to showcase a more modern design and share my thoughts with others. You can find a brief introduction about myself, as well as information on the most significant projects I've worked on. Additionally, there's a blog section where you can read articles about technology.",
+      "link": "https://github.com/lnk00/portfolio",
+      "background": "/portfolio/background.png",
+      "stack": [
+        {
+          "icon": "typescript.svg",
+          "label": "typescript"
+        },
+        {
+          "icon": "astro.svg",
+          "label": "astro"
+        },
+        {
+          "icon": "html.svg",
+          "label": "html"
+        },
+        {
+          "icon": "css.svg",
+          "label": "css"
+        }
+      ],
+      "rows": [
+        {
+          "image": "/portfolio/row1.png",
+          "title": "Articles",
+          "subtitle": "Hand crafted blog posts",
+          "link": "/articles",
+          "button": "see articles",
+          "description": "As someone who is passionate about all things technology, I love sharing my knowledge and insights with others. Whether it's discussing the latest trends and innovations in the industry, exploring new programming languages and frameworks, or sharing my own experiences with various tech tools and platforms, you'll find plenty of engaging and informative articles here."
+        },
+        {
+          "image": "/portfolio/row2.png",
+          "title": "Projects",
+          "subtitle": "Made with love",
+          "link": "/projects",
+          "button": "see projects",
+          "description": "This section features my latest projects. For each project, you can find a brief description, the technology stack used to build it, stunning illustrations, and a link to learn more about it. If I deem it relevant, some of these projects will have a more in-depth presentation in the blog section."
+        },
+        {
+          "image": "/portfolio/row3.png",
+          "title": "Astro",
+          "subtitle": "Blazingly fast",
+          "link": "https://astro.build/",
+          "button": "astro website",
+          "description": "I used Astro, a JavaScript web framework, to build this portfolio/blog. One of the key features that drew me to this framework was its speed promise. Since I didn't need a lot of interactivity, using a single-page application (SPA) framework like React or Angular would have been a waste of resources. My experience using Astro was fantastic, resulting in a blazingly fast portfolio. Therefore, I recommend using Astro whenever possible."
+        }
+      ]
+    },
+    {
+      "title": "Oney Bank",
+      "description": "Oney is a French bank that specializes in split payments. With an Oney bank account, you can split every payment into three or four smaller payments each month. I helped build their new application using React Native.",
+      "link": "https://github.com/lnk00/portfolio",
+      "background": "/oney/background.png",
+      "stack": [
+        {
+          "icon": "react.svg",
+          "label": "react-native"
+        },
+        {
+          "icon": "typescript.svg",
+          "label": "typescript"
+        },
+        {
+          "icon": "html.svg",
+          "label": "html"
+        },
+        {
+          "icon": "css.svg",
+          "label": "css"
+        }
+      ],
+      "rows": [
+        {
+          "image": "/oney/row1.png",
+          "title": "Daily work",
+          "subtitle": "As a frontend engineed",
+          "link": "https://www.oney.com/",
+          "button": "see Oney website",
+          "description": "At Oney, my daily work involved developing the new Oney+ mobile application using React Native and integrating the UI team's designs. I also contributed to setting up a Domain Driven Development (DDD) architecture, which made it easier to update and maintain the application. Given the nature of the application - as it pertains to banking and deals with sensitive data - we placed extensive emphasis on ensuring its security during development."
+        },
+        {
+          "image": "/oney/row2.png",
+          "title": "Key feature",
+          "subtitle": "Split payments managment",
+          "link": "https://apps.apple.com/fr/app/oney-fractionnez-vos-d%C3%A9penses/id1350457378",
+          "button": "see application",
+          "description": "At Oney, I worked on the main feature of the platform, which enables users to split their payments over three or four months. Specifically, I developed the key screens and logic for managing split payments, such as cancellation or early settlement. To achieve this, I made extensive use of various APIs to retrieve the necessary data and perform required actions."
+        }
+      ]
+    },
+    {
+      "title": "Old portfolio",
+      "description": "This project is my previous portfolio, which I had before the one you are currently viewing! The technology stack and goals of this portfolio differ significantly from the current one. Firstly, I used the Svelte Framework, a Single Page Application (SPA) framework, to build it. It was a great opportunity for me to learn a new framework, and I really enjoyed working on it. Additionally, unlike my current portfolio, it did not have a blog platform.",
+      "link": "https://github.com/lnk00/portfolio",
+      "background": "/old-portfolio/background.png",
+      "stack": [
+        {
+          "icon": "svelte.svg",
+          "label": "svelte"
+        },
+        {
+          "icon": "typescript.svg",
+          "label": "typescript"
+        },
+        {
+          "icon": "html.svg",
+          "label": "html"
+        },
+        {
+          "icon": "css.svg",
+          "label": "css"
+        }
+      ],
+      "rows": [
+        {
+          "image": "/old-portfolio/row1.png",
+          "title": "First step",
+          "subtitle": "Design creation",
+          "link": "https://github.com/lnk00/personalwebsite",
+          "button": "see on github",
+          "description": "My first portfolio was the first time I designed a website entirely on my own. Prior to that, I used to follow the design team I worked with and didn't really take part in the design process. After this first experience, I fell in love with the design process, and I continue to have a lot of fun participating in the design process for all the projects I work on."
+        },
+        {
+          "image": "/old-portfolio/row2.png",
+          "title": "Svelte",
+          "subtitle": "A Lovely framework",
+          "link": "https://svelte.dev/",
+          "button": "see svelte website",
+          "description": "Svelte is a relatively new Single Page Application (SPA) framework compared to the giants like React, Angular, and Vue, but it is rapidly gaining popularity and is well-loved among the JavaScript development community. The main difference is that Svelte does the heavy work during a compile step that occurs when you build your app, instead of embedding a runtime in the browser."
+        }
+      ]
+    },
+    {
+      "title": "Naia",
+      "description": "Naia is a birthday reminder app that allows you to send a photo to your friends on their special day. At the end of the day, a customized album is created with all the photos your friend have received. The application will evolve in the near future, so stay tuned! I will surely talk abouit it in my blog.",
+      "link": "https://github.com/lnk00/portfolio",
+      "background": "/birthd/background.png",
+      "stack": [
+        {
+          "icon": "react.svg",
+          "label": "react-native"
+        },
+        {
+          "icon": "typescript.svg",
+          "label": "typescript"
+        },
+        {
+          "icon": "html.svg",
+          "label": "html"
+        },
+        {
+          "icon": "css.svg",
+          "label": "css"
+        }
+      ],
+      "rows": [
+        {
+          "image": "/birthd/row1.png",
+          "title": "Your forgot ?",
+          "subtitle": "We got you",
+          "link": "https://github.com/lnk00/naia",
+          "button": "see github",
+          "description": "The truth is that every year, we tend to forget at least one birthday of a friend or family member. We both know how disappointing it can be when someone you love forgets to send you a little message on your special day. That's why we created Naia, the birthday reminder."
+        },
+        {
+          "image": "/birthd/row2.png",
+          "title": "Serverless",
+          "subtitle": "headaches less",
+          "link": "https://supabase.com/",
+          "button": "see supabase website",
+          "description": "The technology stack used to build Naia includes React Native for the mobile application and Supabase as a serverless backend. We chose Supabase because we needed a solution to handle authentication and sending of photos. Supabase does this quite well, so we didn't see the need to develop a custom solution."
+        }
+      ]
+    }
+  ]
+}
